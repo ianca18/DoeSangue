@@ -1,0 +1,127 @@
+* {
+    /*corrigimento*/
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+  
+}
+
+body {
+  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /*fontes*/
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/*titulo*/
+h1,h2 {
+    color:rgb(250, 12, 12);
+ }
+header h1,main h2 {
+    margin-bottom: 70px;
+}
+
+main h2 span {
+    color: #000000cc;
+}
+
+.form h2 {
+    text-align: right;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+
+/* estrutura*/
+
+header,main,footer {
+    text-align: center;
+}
+
+header,.form,main{ 
+
+    /*espacaçamentos com margin*/
+    margin: 0 auto 70px;
+    
+    /* limites dos elementos na pagina*/
+    width: 90%;
+    max-width: 500px;
+}
+
+
+/*header*/
+
+header button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff4f4f;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*form*/
+
+section.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center;
+
+    background-color:#ff4f4f;
+    padding: 16px 64px;
+}
+
+form input,form button {
+
+    /*lagura*/
+    width: 100%;
+    /*espaçamentos*/
+    margin-bottom: 4px;
+
+    /*corrigindo comportemanto padrao*/
+    padding: 8px 16px;
+
+
+    /*bordas*/
+    border-radius: 4px;
+
+    border: 1px #ffffff88 solid;
+}
+
+ form input {
+     background-color: whitesmoke;
+     
+}
+
+form input::placeholder {
+    color: #000;
+}
+
+form button {
+    font-weight: bold;
+}
+
+
+/*main*/
+
+main.donors {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer {
+    margin-top: auto;
+
+    padding: 16px;
+
+    border: 1px solid#eee;
+}
